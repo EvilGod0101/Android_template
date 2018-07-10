@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Android自定义标题栏-->
+<!--请不要忘记在活动函数中隐藏Android自带的标题栏，代码如下
+	 //隐藏安卓自带标题栏
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null){
+            actionBar.hide();
+        }-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#000033">
+    <Button
+        android:id="@+id/title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="#666669"
+        android:text="Back"
+        android:textColor="#fff"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:gravity="center"
+        android:text="标题"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:layout_centerInParent="true"
+        />
+    <Button
+        android:id="@+id/title_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:background="#666669"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:textColor="#fff"
+        android:text="Edit"
+        />
+</LinearLayout>
